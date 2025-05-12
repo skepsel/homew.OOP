@@ -1,0 +1,25 @@
+[project]
+name = "homew-oop"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Perkhalyuk.K",email = "kyromaku@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "homew"}]
+
+
+[tool.poetry.group.lint.dependencies]
+black = "^25.1.0"
+flake8 = "^7.2.0"
+isort = "^6.0.1"
+mypy = "^1.15.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
