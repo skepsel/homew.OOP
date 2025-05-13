@@ -8,7 +8,9 @@ def main():
     product3 = Product("Часы", "Умные часы с пульсометром", 12990.00, 20)
 
     # Создаем категории
-    category1 = Category("Электроника", "Категория электронных товаров", [product1, product2])
+    category1 = Category(
+        "Электроника", "Категория электронных товаров", [product1, product2]
+    )
     category2 = Category("Гаджеты", "Носимые устройства", [product3])
 
     # Выводим информацию
@@ -22,6 +24,7 @@ def main():
         print("Товары:")
         for product in category.products:
             print(f" - {product.name}: {product.price} руб. ({product.quantity} шт.)")
+
 
 if __name__ == "__main__":
     main()
