@@ -15,7 +15,7 @@ def main():
 
     # Выводим информацию
     print(f"Категорий создано: {Category.category_count}")
-    print(f"Товаров создано: {Category.product_count}")
+    print(f"Товаров в категориях: {Category.total_products_in_categories}")
 
     print("\nИнформация о категориях:")
     for category in [category1, category2]:
