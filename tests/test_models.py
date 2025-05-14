@@ -1,39 +1,36 @@
-from src.models import Category, Product
+import pytest
+from src.models import Product, Category
 
 
-def test_product_initialization():
-    product = Product("Телефон", "Смартфон", 29999.99, 5)
-    assert product.name == "Телефон"
-    assert product.description == "Смартфон"
-    assert product.price == 29999.99
-    assert product.quantity == 5
+def test_product_str():
+    product = Product("Телефон", "Смартфон", 10000, 5)
+    assert str(product) == "Телефон, 10000 руб. Остаток: 5 шт."
 
 
-def test_category_initialization():
-    Category.category_count = 0
-    Category.total_products_in_categories = 0
-
-    product1 = Product("Телефон", "Смартфон", 29999.99, 5)
-    product2 = Product("Наушники", "Беспроводные", 4999.50, 15)
-    category = Category("Электроника", "Гаджеты", [product1, product2])
-
-    assert category.name == "Электроника"
-    assert category.description == "Гаджеты"
-    assert category.products == [product1, product2]
-    assert Category.category_count == 1
-    assert Category.total_products_in_categories == 2
+def test_category_str():
+    category = Category("Электроника", "Гаджеты")
+    product1 = Product("Телефон", "Смартфон", 10000, 5)
+    product2 = Product("Планшет", "iPad", 20000, 2)
+    category.add_product(product1)
+    category.add_product(product2)
+    assert str(category) == "Электроника, количество продуктов: 7 шт."
 
 
-def test_multiple_categories_and_products():
-    Category.category_count = 0
-    Category.total_products_in_categories = 0
+def test_product_add():
+    p1 = Product("Ноутбук", "MacBook", 150000, 1)
+    p2 = Product("Монитор", "LG", 20000, 2)
+    assert p1 + p2 == 150000 * 1 + 20000 * 2
 
-    p1 = Product("Телевизор", "Smart TV", 49999.0, 2)
-    p2 = Product("Микроволновка", "Для кухни", 8999.0, 3)
-    c1 = Category("Бытовая техника", "Описание", [p1, p2])
 
-    p3 = Product("Мышка", "Компьютерная", 999.0, 10)
-    c2 = Category("Периферия", "Комплектующие", [p3])
+def test_price_setter_valid():
+    p = Product("Мышь", "Игровая", 3000, 5)
+    p.price = 5000
+    assert p.price == 5000
 
-    assert Category.category_count == 2
-    assert Category.total_products_in_categories == 3
+
+def test_price_setter_invalid(capsys):
+    p = Product("Клавиатура", "Механическая", 4000, 4)
+    p.price = -100
+    captured = capsys.readouterr()
+    assert "Цена не должна быть нулевая или отрицательная" in captured.out
+    assert p.price == 4000

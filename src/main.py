@@ -1,30 +1,18 @@
-from src.models import Category, Product
-
-
-def main():
-    # Создаем продукты
-    product1 = Product("Телефон", "Смартфон с экраном 6.5 дюйма", 29990.99, 10)
-    product2 = Product("Ноутбук", "Ультрабук 14 дюймов", 79990.50, 5)
-    product3 = Product("Часы", "Умные часы с пульсометром", 12990.00, 20)
-
-    # Создаем категории
-    category1 = Category(
-        "Электроника", "Категория электронных товаров", [product1, product2]
-    )
-    category2 = Category("Гаджеты", "Носимые устройства", [product3])
-
-    # Выводим информацию
-    print(f"Категорий создано: {Category.category_count}")
-    print(f"Товаров в категориях: {Category.total_products_in_categories}")
-
-    print("\nИнформация о категориях:")
-    for category in [category1, category2]:
-        print(f"\nКатегория: {category.name}")
-        print(f"Описание: {category.description}")
-        print("Товары:")
-        for product in category.products:
-            print(f" - {product.name}: {product.price} руб. ({product.quantity} шт.)")
-
+from models import Product, Category
 
 if __name__ == "__main__":
-    main()
+    phone = Product("Телефон", "Смартфон", 10000, 5)
+    laptop = Product.new_product({
+        "name": "Ноутбук",
+        "description": "Игровой",
+        "price": 150000,
+        "quantity": 3
+    })
+
+    electronics = Category("Электроника", "Разные гаджеты")
+    electronics.add_product(phone)
+    electronics.add_product(laptop)
+
+    print(electronics)
+    print(electronics.products)
+    print(phone + laptop)
