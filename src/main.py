@@ -1,20 +1,19 @@
 from models import Category, LawnGrass, Product, Smartphone
 
 if __name__ == "__main__":
-    s = Smartphone("iPhone", "Смартфон", 90000, 3, "A15", "13 Pro", 128, "серый")
-    g = LawnGrass("Газон", "Для дачи", 500, 10, "Германия", "7 дней", "зеленый")
     p = Product("Наушники", "Bluetooth", 4000, 5)
+    s = Smartphone("iPhone", "Телефон", 90000, 3, "A15", "13 Pro", 128, "серый")
+    g = LawnGrass("Газон", "Для дачи", 500, 10, "Германия", "7 дней", "зеленый")
 
     tech = Category("Техника", "Электроника и гаджеты")
-    tech.add_product(s)
-    tech.add_product(p)
+    garden = Category("Сад", "Газоны и растения")
 
-    garden = Category("Сад", "Уход за газоном")
+    tech.add_product(p)
+    tech.add_product(s)
     garden.add_product(g)
 
     print(tech)
     print(tech.products)
+
     print(garden)
     print(garden.products)
-    print(p + p)  # работает
-    # print(p + s)  # вызовет TypeError

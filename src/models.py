@@ -1,12 +1,15 @@
-class Product:
+from abc import ABC, abstractmethod
+
+
+class BaseProduct(ABC):
+    """Абстрактный базовый класс для всех продуктов"""
+
+    @abstractmethod
     def __init__(self, name: str, description: str, price: float, quantity: int):
         self.name = name
         self.description = description
         self.__price = price
         self.quantity = quantity
-
-    def __str__(self):
-        return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт."
 
     @property
     def price(self):
@@ -17,7 +20,28 @@ class Product:
         if new_price > 0:
             self.__price = new_price
         else:
-            print("Цена не должна быть нулевая или отрицательная")
+            raise ValueError("Цена должна быть положительной")
+
+    def __str__(self):
+        return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт."
+
+    def __add__(self, other):
+        if type(self) is not type(other):
+            raise TypeError("Нельзя складывать товары разных типов.")
+        return self.price * self.quantity + other.price * other.quantity
+
+
+class CreationLoggerMixin:
+    """Миксин для вывода информации при создании объекта"""
+
+    def __init__(self, *args, **kwargs):
+        cls_name = self.__class__.__name__
+        print(f"{cls_name} создан с параметрами: {args}, {kwargs}")
+        super().__init__(*args, **kwargs)
+
+
+class Product(CreationLoggerMixin, BaseProduct):
+    """Обычный продукт"""
 
     @classmethod
     def new_product(cls, data: dict):
@@ -28,34 +52,35 @@ class Product:
             quantity=data.get("quantity"),
         )
 
-    def __add__(self, other):
-        if type(self) is not type(other):
-            raise TypeError("Нельзя складывать товары разных типов.")
-        return self.price * self.quantity + other.price * other.quantity
-
 
 class Smartphone(Product):
+    """Смартфон — наследник Product"""
+
     def __init__(
-        self, name, description, price, quantity, efficiency, model, memory, color
+            self, name, description, price, quantity, efficiency, model, memory, color
     ):
-        super().__init__(name, description, price, quantity)
         self.efficiency = efficiency
         self.model = model
         self.memory = memory
         self.color = color
+        super().__init__(name, description, price, quantity)
 
 
 class LawnGrass(Product):
+    """Газонная трава — наследник Product"""
+
     def __init__(
-        self, name, description, price, quantity, country, germination_period, color
+            self, name, description, price, quantity, country, germination_period, color
     ):
-        super().__init__(name, description, price, quantity)
         self.country = country
         self.germination_period = germination_period
         self.color = color
+        super().__init__(name, description, price, quantity)
 
 
 class Category:
+    """Категория товаров"""
+
     product_count = 0
     category_count = 0
 
@@ -66,9 +91,9 @@ class Category:
         Category.category_count += 1
 
     def add_product(self, product: Product):
-        if not isinstance(product, Product):
+        if not isinstance(product, BaseProduct):
             raise TypeError(
-                "Можно добавлять только объекты класса Product или его подклассов."
+                "Можно добавлять только объекты класса Product и его наследников."
             )
         self.__products.append(product)
         Category.product_count += 1
