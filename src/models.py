@@ -50,7 +50,7 @@ class Category:
 
     @property
     def products(self):
-        return ''.join([str(product) + '\n' for product in self.__products])
+        return "".join([str(product) + "\n" for product in self.__products])
 
     def __str__(self):
         total_quantity = sum(product.quantity for product in self.__products)
