@@ -29,9 +29,30 @@ class Product:
         )
 
     def __add__(self, other):
-        if not isinstance(other, Product):
-            return NotImplemented
+        if type(self) is not type(other):
+            raise TypeError("Нельзя складывать товары разных типов.")
         return self.price * self.quantity + other.price * other.quantity
+
+
+class Smartphone(Product):
+    def __init__(
+        self, name, description, price, quantity, efficiency, model, memory, color
+    ):
+        super().__init__(name, description, price, quantity)
+        self.efficiency = efficiency
+        self.model = model
+        self.memory = memory
+        self.color = color
+
+
+class LawnGrass(Product):
+    def __init__(
+        self, name, description, price, quantity, country, germination_period, color
+    ):
+        super().__init__(name, description, price, quantity)
+        self.country = country
+        self.germination_period = germination_period
+        self.color = color
 
 
 class Category:
@@ -45,6 +66,10 @@ class Category:
         Category.category_count += 1
 
     def add_product(self, product: Product):
+        if not isinstance(product, Product):
+            raise TypeError(
+                "Можно добавлять только объекты класса Product или его подклассов."
+            )
         self.__products.append(product)
         Category.product_count += 1
 
