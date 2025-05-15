@@ -6,6 +6,8 @@ class BaseProduct(ABC):
 
     @abstractmethod
     def __init__(self, name: str, description: str, price: float, quantity: int):
+        if quantity == 0:
+            raise ValueError("Товар с нулевым количеством не может быть добавлен")
         self.name = name
         self.description = description
         self.__price = price
@@ -57,7 +59,7 @@ class Smartphone(Product):
     """Смартфон — наследник Product"""
 
     def __init__(
-            self, name, description, price, quantity, efficiency, model, memory, color
+        self, name, description, price, quantity, efficiency, model, memory, color
     ):
         self.efficiency = efficiency
         self.model = model
@@ -70,7 +72,7 @@ class LawnGrass(Product):
     """Газонная трава — наследник Product"""
 
     def __init__(
-            self, name, description, price, quantity, country, germination_period, color
+        self, name, description, price, quantity, country, germination_period, color
     ):
         self.country = country
         self.germination_period = germination_period
@@ -97,6 +99,13 @@ class Category:
             )
         self.__products.append(product)
         Category.product_count += 1
+
+    def average_price(self):
+        try:
+            total = sum(product.price for product in self.__products)
+            return total / len(self.__products)
+        except ZeroDivisionError:
+            return 0
 
     @property
     def products(self):

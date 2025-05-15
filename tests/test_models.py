@@ -7,6 +7,11 @@ def test_product_creation_and_str():
     assert str(p) == "Мышь, 1000 руб. Остаток: 10 шт."
 
 
+def test_product_zero_quantity_raises():
+    with pytest.raises(ValueError, match="Товар с нулевым количеством не может быть добавлен"):
+        Product("Нулевой", "Ошибка", 100, 0)
+
+
 def test_smartphone_attributes():
     s = Smartphone("iPhone", "Телефон", 100000, 1, "A16", "14 Pro", 256, "чёрный")
     assert s.efficiency == "A16"
@@ -49,3 +54,15 @@ def test_category_add_invalid_type_raises():
     c = Category("Товары", "Разное")
     with pytest.raises(TypeError):
         c.add_product("не продукт")
+
+
+def test_category_average_price():
+    c = Category("Разное", "Товары")
+    c.add_product(Product("Товар 1", "Описание", 100, 1))
+    c.add_product(Product("Товар 2", "Описание", 200, 2))
+    assert c.average_price() == 150.0
+
+
+def test_category_average_price_empty():
+    c = Category("Пустая", "Нет товаров")
+    assert c.average_price() == 0
