@@ -6,6 +6,40 @@ class BaseProduct(ABC):
 
     @abstractmethod
     def __init__(self, name: str, description: str, price: float, quantity: int):
+        pass
+
+    @property
+    @abstractmethod
+    def price(self):
+        pass
+
+    @price.setter
+    @abstractmethod
+    def price(self, new_price):
+        pass
+
+    @abstractmethod
+    def __str__(self):
+        pass
+
+    @abstractmethod
+    def __add__(self, other):
+        pass
+
+
+class CreationLoggerMixin:
+    """Миксин для вывода информации при создании объекта"""
+
+    def __init__(self, *args, **kwargs):
+        cls_name = self.__class__.__name__
+        print(f"{cls_name} создан с параметрами: {args}, {kwargs}")
+        super().__init__(*args, **kwargs)
+
+
+class Product(CreationLoggerMixin, BaseProduct):
+    """Обычный продукт"""
+
+    def __init__(self, name: str, description: str, price: float, quantity: int):
         if quantity == 0:
             raise ValueError("Товар с нулевым количеством не может быть добавлен")
         self.name = name
@@ -32,19 +66,6 @@ class BaseProduct(ABC):
             raise TypeError("Нельзя складывать товары разных типов.")
         return self.price * self.quantity + other.price * other.quantity
 
-
-class CreationLoggerMixin:
-    """Миксин для вывода информации при создании объекта"""
-
-    def __init__(self, *args, **kwargs):
-        cls_name = self.__class__.__name__
-        print(f"{cls_name} создан с параметрами: {args}, {kwargs}")
-        super().__init__(*args, **kwargs)
-
-
-class Product(CreationLoggerMixin, BaseProduct):
-    """Обычный продукт"""
-
     @classmethod
     def new_product(cls, data: dict):
         return cls(
@@ -59,7 +80,7 @@ class Smartphone(Product):
     """Смартфон — наследник Product"""
 
     def __init__(
-        self, name, description, price, quantity, efficiency, model, memory, color
+            self, name, description, price, quantity, efficiency, model, memory, color
     ):
         self.efficiency = efficiency
         self.model = model
@@ -72,7 +93,7 @@ class LawnGrass(Product):
     """Газонная трава — наследник Product"""
 
     def __init__(
-        self, name, description, price, quantity, country, germination_period, color
+            self, name, description, price, quantity, country, germination_period, color
     ):
         self.country = country
         self.germination_period = germination_period
