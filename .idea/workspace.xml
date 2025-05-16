@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e59175a-cbdf-4acf-ab06-1f3c43d49c6b" name="Changes" comment="16.2 HW fix">
+      <change afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/homew.OOP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/CACHEDIR.TAG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.fish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.nu" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate_this.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/black.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/blackd.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/coverage-3.13.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/coverage.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/coverage3.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/deactivate.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dmypy.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/doesitcache.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dotenv.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dul-receive-pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dul-upload-pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dulwich.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/f2py.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/findpython.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/flake8.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/httpx.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/isort-identify-imports.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/isort.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/keyring.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/libcrypto-3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/libffi-8.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/libssl-3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/mypy.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/mypyc.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/normalizer.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/numpy-config.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pbs-install.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip-3.13.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip3.13.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip3.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pkginfo.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/poetry.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/py.test.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pycodestyle.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pydoc.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pyflakes.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pyproject-build.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pytest.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/python.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/python3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/python313.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pythonw.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/stubgen.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/stubtest.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/tcl86t.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/tk86t.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/trove-classifiers.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/vcruntime140.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/vcruntime140_1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/virtualenv.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/Scripts/zlib1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/pyvenv.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/class_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/coverage_html_cb_497bf287.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/favicon_32_cb_58284776.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/function_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/keybd_closed_cb_ce680311.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/style_cb_718ce007.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6___init___py.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_models_py.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/z_a44f0ac069e85531___init___py.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcov/z_a44f0ac069e85531_test_models_py.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;skepsel&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/skepsel/homew.OOP.git&quot;,
+    &quot;accountId&quot;: &quot;7fb8307e-89aa-4785-bc27-d94b25b182aa&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2wzTGxcqlrGCL4zDRrcmk42ekeQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on feature&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e59175a-cbdf-4acf-ab06-1f3c43d49c6b" name="Changes" comment="" />
+      <created>1747043310532</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747043310532</updated>
+    </task>
+    <task id="LOCAL-00001" summary="14.1 HW">
+      <option name="closed" value="true" />
+      <created>1747045322126</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747045322126</updated>
+    </task>
+    <task id="LOCAL-00002" summary="14.1 HW correct">
+      <option name="closed" value="true" />
+      <created>1747047513178</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747047513178</updated>
+    </task>
+    <task id="LOCAL-00003" summary="14.2 HW">
+      <option name="closed" value="true" />
+      <created>1747119885649</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747119885649</updated>
+    </task>
+    <task id="LOCAL-00004" summary="14.1 HW fix Category">
+      <option name="closed" value="true" />
+      <created>1747126204712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747126204712</updated>
+    </task>
+    <task id="LOCAL-00005" summary="15.1 HW">
+      <option name="closed" value="true" />
+      <created>1747208032021</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747208032021</updated>
+    </task>
+    <task id="LOCAL-00006" summary="15.1 HW some fix">
+      <option name="closed" value="true" />
+      <created>1747209567189</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747209567189</updated>
+    </task>
+    <task id="LOCAL-00007" summary="16.1 HW">
+      <option name="closed" value="true" />
+      <created>1747215697520</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747215697520</updated>
+    </task>
+    <task id="LOCAL-00008" summary="16.2 HW">
+      <option name="closed" value="true" />
+      <created>1747218703139</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747218703139</updated>
+    </task>
+    <task id="LOCAL-00009" summary="16.1 HW fix">
+      <option name="closed" value="true" />
+      <created>1747295209049</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747295209049</updated>
+    </task>
+    <task id="LOCAL-00010" summary="17.1 HW">
+      <option name="closed" value="true" />
+      <created>1747296111534</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747296111534</updated>
+    </task>
+    <task id="LOCAL-00011" summary="17.1 HW fix">
+      <option name="closed" value="true" />
+      <created>1747307860967</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747307860967</updated>
+    </task>
+    <task id="LOCAL-00012" summary="16.2 HW fix">
+      <option name="closed" value="true" />
+      <created>1747323546542</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747323546542</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="14.1 HW" />
+    <MESSAGE value="14.1 HW correct" />
+    <MESSAGE value="14.2 HW" />
+    <MESSAGE value="14.1 HW fix Category" />
+    <MESSAGE value="15.1 HW" />
+    <MESSAGE value="15.1 HW some fix" />
+    <MESSAGE value="16.1 HW" />
+    <MESSAGE value="16.2 HW" />
+    <MESSAGE value="16.1 HW fix" />
+    <MESSAGE value="17.1 HW" />
+    <MESSAGE value="17.1 HW fix" />
+    <MESSAGE value="16.2 HW fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="16.2 HW fix" />
+  </component>
+</project>

@@ -46,6 +46,7 @@ class Product(CreationLoggerMixin, BaseProduct):
         self.description = description
         self.__price = price
         self.quantity = quantity
+        super().__init__(name, description, price, quantity)
 
     @property
     def price(self):
