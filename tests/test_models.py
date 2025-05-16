@@ -1,5 +1,6 @@
 import pytest
-from src.models import Product, Smartphone, LawnGrass, Category
+
+from src.models import Category, LawnGrass, Product, Smartphone
 
 
 def test_product_creation_and_str():
@@ -8,7 +9,9 @@ def test_product_creation_and_str():
 
 
 def test_product_zero_quantity_raises():
-    with pytest.raises(ValueError, match="Товар с нулевым количеством не может быть добавлен"):
+    with pytest.raises(
+        ValueError, match="Товар с нулевым количеством не может быть добавлен"
+    ):
         Product("Нулевой", "Ошибка", 100, 0)
 
 
@@ -26,7 +29,7 @@ def test_product_new_product_method():
         "name": "Клавиатура",
         "description": "Игровая",
         "price": 3000,
-        "quantity": 5
+        "quantity": 5,
     }
     p = Product.new_product(data)
     assert p.name == "Клавиатура"
@@ -39,7 +42,10 @@ def test_creation_logger_mixin(capsys):
     # Создаем продукт и проверяем, что миксин выводит сообщение
     Product("Мышь", "Обычная", 1000, 10)
     captured = capsys.readouterr()
-    assert "Product создан с параметрами: ('Мышь', 'Обычная', 1000, 10), {}" in captured.out
+    assert (
+        "Product создан с параметрами: ('Мышь', 'Обычная', 1000, 10), {}"
+        in captured.out
+    )
 
 
 def test_smartphone_attributes():

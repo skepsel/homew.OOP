@@ -81,7 +81,7 @@ class Smartphone(Product):
     """Смартфон — наследник Product"""
 
     def __init__(
-            self, name, description, price, quantity, efficiency, model, memory, color
+        self, name, description, price, quantity, efficiency, model, memory, color
     ):
         self.efficiency = efficiency
         self.model = model
@@ -94,7 +94,7 @@ class LawnGrass(Product):
     """Газонная трава — наследник Product"""
 
     def __init__(
-            self, name, description, price, quantity, country, germination_period, color
+        self, name, description, price, quantity, country, germination_period, color
     ):
         self.country = country
         self.germination_period = germination_period
