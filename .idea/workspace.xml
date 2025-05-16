@@ -4,91 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e59175a-cbdf-4acf-ab06-1f3c43d49c6b" name="Changes" comment="16.2 HW fix">
-      <change afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/homew.OOP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/CACHEDIR.TAG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.fish" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.nu" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate_this.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/black.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/blackd.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/coverage-3.13.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/coverage.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/coverage3.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/deactivate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dmypy.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/doesitcache.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dotenv.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dul-receive-pack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dul-upload-pack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dulwich.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/f2py.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/findpython.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/flake8.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/httpx.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/isort-identify-imports.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/isort.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/keyring.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/libcrypto-3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/libffi-8.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/libssl-3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/mypy.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/mypyc.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/normalizer.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/numpy-config.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pbs-install.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip-3.13.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip3.13.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip3.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pkginfo.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/poetry.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/py.test.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pycodestyle.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pydoc.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pyflakes.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pyproject-build.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pytest.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/python.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/python3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/python313.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pythonw.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/stubgen.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/stubtest.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/tcl86t.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/tk86t.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/trove-classifiers.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/vcruntime140.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/vcruntime140_1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/virtualenv.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/Scripts/zlib1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.venv/pyvenv.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/class_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/coverage_html_cb_497bf287.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/favicon_32_cb_58284776.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/function_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/keybd_closed_cb_ce680311.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/style_cb_718ce007.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6___init___py.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_models_py.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/z_a44f0ac069e85531___init___py.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/z_a44f0ac069e85531_test_models_py.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+    <list default="true" id="1e59175a-cbdf-4acf-ab06-1f3c43d49c6b" name="Changes" comment="16.2 HW fix .gitignore and class Product">
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,13 +50,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#1 on feature&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.models.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "#1 on feature"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -252,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747323546542</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="16.2 HW fix .gitignore and class Product">
+      <option name="closed" value="true" />
+      <created>1747381443620</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747381443620</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +205,7 @@
     <MESSAGE value="17.1 HW" />
     <MESSAGE value="17.1 HW fix" />
     <MESSAGE value="16.2 HW fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="16.2 HW fix" />
+    <MESSAGE value="16.2 HW fix .gitignore and class Product" />
+    <option name="LAST_COMMIT_MESSAGE" value="16.2 HW fix .gitignore and class Product" />
   </component>
 </project>
